@@ -1,0 +1,31 @@
+<div class="container col-md-12">
+  <div>
+    <button [routerLink]="['/register']" routerLinkActive="router-link-active"
+      class="btn btn-primary m-l-10 pull-right">Register</button>
+
+    <div class="table-responsive table-container">
+      <table class="table table-light table-hover table-striped" aria-describedby="Employee list">
+      <thead class=" thead-light">
+        <tr>
+          <th id="employeeID"> Employee ID</th>
+          <th id="firstName">First Name</th>
+          <th id="lastName">Last Name</th>
+          <th id="dob">Date Of Birth</th>
+          <th id="gender">Gender</th>
+          <th id="department">Department</th>
+        </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let employee of employees">
+            <td>{{employee?.id}}</td>
+            <td>{{employee?.firstName}}</td>
+            <td>{{employee?.lastName }}</td>
+            <td>{{employee?.dob }}</td>
+            <td>{{employee?.gender}}</td>
+            <td>{{employee?.department }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>

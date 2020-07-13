@@ -1,0 +1,2 @@
+INSERT INTO EMPLOYEE ( first_name,last_name,dob,gender,department) VALUES ('MS','DHONI',TO_DATE('2003/05/03', 'yyyy/mm/dd'),'Male','CSE');
+INSERT INTO EMPLOYEE ( first_name,last_name,dob,gender,department) VALUES ('MS','DHONI',TO_DATE('2003/05/03', 'yyyy/mm/dd'),'Male','CSE');
