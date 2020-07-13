@@ -1,6 +1,6 @@
 # Spring-boot-data-H2-embedded
 
-In this app, I used H2 in-memory database for demo purpose
+In this app, I used H2 in-memory database 
 
 **Application.properties**
 
@@ -25,14 +25,14 @@ public interface EmployeeService extends JpaRepository<Employee, Long>{
 
 ```
 > mvn clean install
-> java -jar target/spring-h2-demo.jar
+> java -jar target/employee-backend.jar
 ```
 
 **To Run with Docker**
 ```
 > mvn clean install
-> docker build -t springboot-h2-sample
-> docker run -d -p 8080:8080 springboot-h2-sample
+> docker build -t employee-backend
+> docker run -d -p 8080:8080 employee-backend
 
 > docker stop <image-name>
 ```
